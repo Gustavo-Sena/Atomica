@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title> 
+</head>
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title-primary">ENTRAR</h2>
+                <p class="description-primary">Para continuar conectado com a gente</p>
+                <p class="description-primary">Por favor entre com as suas informações pessoais</p>
+                <button id="btn_entrar" class="btn btn-primary">ENTRAR</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title-second">CRIAR CONTA</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fa-brands fa-facebook"></i>
+                            </li>
+                        </a>
+                        <a  class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fa-brands fa-google"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fa-brands fa-instagram"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <p class="description description-second">Cadastre os seus dados</p>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-user icon-modify"></i>
+                        <input type="text" placeholder="nome" id="ipt_nome">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-user icon-modify"></i>
+                        <input type="text" placeholder="sobrenome" id="ipt_sobrenome">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fa-regular fa-id-card icon-modify"></i>
+                        <input type="number" placeholder="cpf" id="ipt_cpf">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fa-regular fa-id-card icon-modify"></i>
+                        <input type="text" placeholder="RG" id="ipt_RG">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-phone icon-modify"></i>
+                        <input type="number" placeholder="telefone1" id="ipt_telefone1">                    
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-phone icon-modify"></i>
+                        <input type="number" placeholder="telefone2" id="ipt_telefone2">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-envelope icon-modify"></i>
+                        <input type="text" placeholder="email" id="ipt_email">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-lock icon-modify"></i>
+                        <input type="password" placeholder="senha" id="ipt_senha">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-lock icon-modify"></i>
+                        <input type="password" placeholder="confirmar senha" id="ipt_conf_senha">
+                    </label>
+                     
+                    <button onclick="cadastrar()" class="btn btn-second">CADASTRAR</button>
+                </form>
+            </div>
+        </div>
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Olá, amigo!</h2>
+                <p class="description description-primary">Entre com os seus dados pessoais</p>
+                <p class="description description-primary">e comece a sua jornada atômica com a gente</p>
+                <button id="btn_cadastrar" class="btn btn-primary">CADASTRAR</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Entre na sua conta</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fa-brands fa-facebook"></i>
+                            </li>
+                        </a>
+                        <a  class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fa-brands fa-google"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fa-brands fa-instagram"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <p class="description description-second">Ou use o seu email</p>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-envelope icon-modify"></i>
+                        <input type="text" placeholder="email" id="ipt_email">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-lock icon-modify"></i>
+                        <input type="password" placeholder="senha" id="ipt_senha">
+                    </label>
+                     
+                    <button class="btn btn-second">ENTRAR</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
