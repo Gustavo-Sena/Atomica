@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.center{
+.center {
     display: flex;
     flex-wrap: wrap;
     max-width: 1100;
@@ -14,25 +14,26 @@
     padding: 0 2%;
 }
 
-html,body{
+html,
+body {
     width: 100%;
     overflow-x: hidden;
     font-family: 'PT Sans', sans-serif;
     background-color: #1c1726;
 }
 
-.header{
+.header {
     height: 200px;
-    padding: 100px ;
+    padding: 100px;
     background-color: var(--color-neutral-10);
 }
 
-.logo{
+.logo {
     cursor: pointer;
     width: 30%;
 }
 
-.menu{
+.menu {
     padding-top: 30px;
     width: 70%;
     height: 10%;
@@ -42,14 +43,14 @@ html,body{
     align-items: center;
 }
 
-.menu a{
+.menu a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     margin-right: 50px;
 }
 
-.ENTRAR{
+.ENTRAR {
     border: 0;
     background-color: rgb(235, 63, 94);
     width: 100px;
@@ -59,22 +60,23 @@ html,body{
     justify-content: center;
     align-items: center;
 }
-.ENTRAR a{
+
+.ENTRAR a {
     margin: 0;
 }
 
-section.sobre{
+section.sobre {
     position: relative;
     height: calc(100% - 200px);
-    
+
 }
 
-.img1{
+.img1 {
     position: absolute;
-    top: 25%; 
+    top: 25%;
 }
 
-.texto_quem_somos{
+.texto_quem_somos {
     color: white;
     top: 0;
     margin-left: 63%;
@@ -83,11 +85,11 @@ section.sobre{
 
 }
 
-.texto_quem_somos h1{
+.texto_quem_somos h1 {
     font-size: 40px;
 }
 
-.texto_onde{
+.texto_onde {
     color: white;
     top: 0;
     margin-left: 10%;
@@ -95,11 +97,11 @@ section.sobre{
     font-size: 20px;
 }
 
-.texto_onde h1{
+.texto_onde h1 {
     font-size: 40px;
 }
 
-.slider{
+.slider {
     margin: 0 auto;
     width: 1100px;
     height: 800px;
@@ -107,27 +109,27 @@ section.sobre{
     margin-top: 10%;
 }
 
-.slides{
+.slides {
     width: 400%;
     height: 600px;
     display: flex;
 }
 
-.slides input{
+.slides input {
     display: none;
 }
 
-.slide{
+.slide {
     width: 25%;
     position: relative;
     transition: 2s;
 }
 
-.slide img{
+.slide img {
     width: 800px;
 }
 
-.manual-navigation{
+.manual-navigation {
     position: absolute;
     width: 1100px;
     margin-top: 4.57%;
@@ -135,7 +137,7 @@ section.sobre{
     justify-content: center;
 }
 
-.manual-btn{
+.manual-btn {
     border: 2px solid white;
     padding: 5px;
     border-radius: 10px;
@@ -143,32 +145,32 @@ section.sobre{
     transition: 1s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
     margin-right: 40px;
 }
 
-.manual-btn:hover{
+.manual-btn:hover {
     background-color: white;
 }
 
-#radio1:checked ~ .first{
+#radio1:checked~.first {
     margin-left: 0;
 }
 
-#radio2:checked ~ .first{
+#radio2:checked~.first {
     margin-left: -25%;
 }
 
-#radio3:checked ~ .first{
+#radio3:checked~.first {
     margin-left: -50%;
 }
 
-#radio4:checked ~ .first{
+#radio4:checked~.first {
     margin-left: -75%;
 }
 
 
-.navigation-auto{
+.navigation-auto {
     position: absolute;
     width: 1100px;
     margin-top: 660px;
@@ -176,76 +178,82 @@ section.sobre{
     justify-content: center;
 }
 
-.navigation-auto div:not(:last-child){
+.navigation-auto div:not(:last-child) {
     margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
+#radio1:checked~.navigation-auto .auto-btn1 {
     background-color: white;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2{
+#radio2:checked~.navigation-auto .auto-btn2 {
     background-color: white;
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3{
+#radio3:checked~.navigation-auto .auto-btn3 {
     background-color: white;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
+#radio1:checked~.navigation-auto .auto-btn1 {
     background-color: white;
 }
 
-.texto_palco_1{
+.texto_palco_1 {
     color: white;
 }
 
-.texto_palco_2{
-    color: white; 
-}
-
-.texto_palco_3{
+.texto_palco_2 {
     color: white;
 }
 
-.texto_palco_4{
+.texto_palco_3 {
     color: white;
 }
 
-:root{
+.texto_palco_4 {
+    color: white;
+}
+
+:root {
     --color-neutral-0: #0e0c0c;
     --color-neutral-10: #171717;
     --color-neutral-30: #a8a29e;
     --color-neutral-40: #f5f5f5;
 }
 
-footer{
+footer {
     width: 100%;
     color: var(--color-neutral-40);
 }
 
-.footer-link{
+.footer-link {
     text-decoration: none;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
 }
 
-#footer_content{
+#footer_content {
     background-color: var(--color-neutral-10);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
 }
 
-#footer_contacts h1{
+#footer_contacts h1 {
     margin-bottom: 0.75rem;
 }
 
-#footer_social_media{
+#footer_social_media {
     display: flex;
     gap: 2rem;
     margin-top: 1.5rem;
 }
 
-#foooter_social_media .footer-link{
+#foooter_social_media .footer-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -256,67 +264,67 @@ footer{
     border-radius: 50%;
 }
 
-#foooter_social_media .footer-link i{
+#foooter_social_media .footer-link i {
     font-size: 1.25rem;
 }
 
-#foooter_social_media .footer-link:hover{
+#foooter_social_media .footer-link:hover {
     opacity: 0.8;
 }
 
-#instagram{
+#instagram {
     background: linear-gradient(#7f37c9, #ff2992, #ff9807);
 }
 
-#facebook{
+#facebook {
     background-color: #4267b3;
 }
 
-#whatsapp{
+#whatsapp {
     background-color: #25d366;
 }
 
-.footer-list{
+.footer-list {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     list-style: none;
 }
 
-.footer-list .footer-link{
+.footer-list .footer-link {
     color: var(--color-neutral-30);
     transition: all 0.4s;
 }
 
-.footer-list .footer-link:hover{
+.footer-list .footer-link:hover {
     color: rgb(235, 63, 94);
 }
 
-#footer_subscribe{
+#footer_subscribe {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-#footer_subscribe p{
+#footer_subscribe p {
     color: var(--color-neutral-30);
 }
 
-#input_group{
+#input_group {
     display: flex;
     align-items: center;
     background-color: var(--color-neutral-0);
     border-radius: 4px;
 }
 
-#input_group input{
+#input_group input {
     all: unset;
     padding: 0.75rem;
     width: 100%;
 }
 
-#input_group button{
-    background-color:rgb(235, 63, 94);
+#input_group button {
+    background-color: rgb(235, 63, 94);
     border: none;
     color: var(--color-neutral-40);
     padding: 0px 1.25rem;
@@ -327,12 +335,12 @@ footer{
 }
 
 
-#input_group button:hover{
+#input_group button:hover {
     opacity: 0.8;
     transition: all 0.4s;
 }
 
-#footer_copyright{
+#footer_copyright {
     display: flex;
     justify-content: center;
     background-color: var(--color-neutral-0);

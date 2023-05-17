@@ -16,7 +16,7 @@ function cadastrar(){
     var senha = ipt_senha.value
     var conf_senha = ipt_conf_senha.value
 
-    if(conf_senha == senha){
+    if(senha == conf_senha){
         alert("TUDO CERTO!")
     }
     else{

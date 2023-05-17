@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif; 
+    background-color: #1c1726;
+    color: white;
+}
+
+.artistas{
+    background-color: #171717 ;
+    height: 30%;
+    width: 30%;
+    border-radius: 20px;
+    margin-top: 5%;
+    display: inline-block;
+}
+
+.artistas h1{
+    display: flex;
+    justify-content: center;
+}
+
+.artistas .btn{
+    margin-left: 25%;
+}
+
+.shows_part{
+    background-color: #171717 ;
+    height: 30%;
+    width: 30%;
+    border-radius: 20px;
+    margin-top: 5%;
+    display: inline-block;
+}
+
+.shows_part h1{
+    display: flex;
+    justify-content: center;
+}
+
+.shows_part .btn{
+    margin-left: 25%;
+}
+
+.btn{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center;
+    border-width: 0;
+    margin-top: 1rem;
+    background-color: rgb(235, 63, 94);
+    border: none;
+}
+
+.btn:hover{
+    background-color: white;
+    color: rgb(235, 63, 94);
+    transition: background-color .5s;
+}
+
+#fade, #modal{
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #1c1726;
+    width: 500px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal-body p{
+    margin-bottom: 1rem;
+}
+
+#modal.hide,
+#fade.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide{
+    top: 0;
+}
+
+#fade2, #modal2{
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#modal2{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #1c1726;
+    width: 500px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.modal2-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal-body p{
+    margin-bottom: 1rem;
+}
+
+#modal2.hide,
+#fade2.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal2.hide{
+    top: 0;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.form input{
+    height: 45px;
+    width: 80%;
+    border: none;
+    background-color: #ecf0f1;
+}
+
+.label-input{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    border-radius: 20px;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
